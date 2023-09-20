@@ -9,11 +9,6 @@ export default function MainPage() {
 
     return (
         <SectionsContainer {...options}>
-            {/* <Section>Home</Section>
-            <Section>Team</Section>
-            <Section>Vision</Section>
-            <Section>Member</Section>
-            <Section>Project</Section> */}
             <Section>Home</Section>
             <Section>Team</Section>
             <Section>Vision</Section>
