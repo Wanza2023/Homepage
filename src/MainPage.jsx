@@ -1,9 +1,11 @@
 import { Section, SectionsContainer } from "react-fullpage";
 import Vision from "./Vision";
+import WhatWanza from "./WhatWanza";
+import Team from "./Team";
 
 export default function MainPage() {
     let options = {
-        anchors: ['Home', 'Team', 'Vision', 'Member', 'Project'],
+        anchors: ['Home','Wanza', 'Team', 'Vision', 'Member', 'Project'],
         navigation: false,
         verticalAlign: true
     };
@@ -11,7 +13,8 @@ export default function MainPage() {
     return (
         <SectionsContainer {...options}>
             <Section>Home</Section>
-            <Section>Team</Section>
+            <Section><WhatWanza /></Section>
+            <Section><Team/></Section>
             <Section><Vision /></Section>
             <Section>Member</Section>
             <Section>Project</Section>

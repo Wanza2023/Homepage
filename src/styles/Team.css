@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-before{
+    height: 14rem;
+    width: 14rem;
+    opacity: 0;
+    margin: 2rem;
+}
+.slide-after{
+    height: 14rem;
+    width: 14rem;
+    opacity: 0;
+    margin: 2rem;
+    animation: FadeUp1 1s 0.5s forwards ease-out;
+    
+}
+
+.wrapper-before{
+    text-align: left;
+    opacity: 0;
+}
+.wrapper-after{
+    text-align: left;
+    opacity: 0;
+    animation: FadeUp2 1s forwards ease-in-out;
+}
+.logo{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.description{
+    font-size: 1.5rem;
+}
+span{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+@keyframes FadeUp1 {
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes FadeUp2 {
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
