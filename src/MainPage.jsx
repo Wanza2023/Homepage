@@ -2,6 +2,7 @@ import { Section, SectionsContainer } from "react-fullpage";
 import Vision from "./Vision";
 import WhatWanza from "./WhatWanza";
 import Team from "./Team";
+import WanzaMember from "./WanzaMember";
 
 export default function MainPage() {
     let options = {
@@ -16,8 +17,8 @@ export default function MainPage() {
             <Section><WhatWanza /></Section>
             <Section><Team/></Section>
             <Section><Vision /></Section>
-            <Section>Member</Section>
-            <Section>Project</Section>
+            <Section><WanzaMember/></Section>
+            <Section></Section>
         </SectionsContainer>
     )
 }
