@@ -1,0 +1,43 @@
+.title {
+    font-family: "Inter-SemiBold";
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 500px;
+    padding: 5px;
+}
+
+.contentTitle {
+    font-family: "Inter-SemiBold";
+}
+
+.box {
+    width: 20vw;
+    height: 40vh;
+    border-radius: 70px;
+    box-shadow: 10px 10px 10px #DCDCDC;
+    margin: -100px;
+    padding: 5px;
+    transition: all 0.2s linear;
+    color: #000;
+}
+
+.grow {
+    width: 30vw;
+    height: 50vh;
+    transition: all 0.2s linear;
+    border-radius: 70px;
+    box-shadow: 10px 10px 10px #DCDCDC;
+}
+
+.content {
+    font-family: "Inter-Regular";
+    margin-top: 50px;
+    font-size: 25px ;
+}
