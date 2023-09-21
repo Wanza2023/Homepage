@@ -1,0 +1,65 @@
+/* CSS 파일에서 미디어 쿼리 추가 */
+@media (max-width: 768px) { /* 화면 너비가 768px 이하인 경우 */
+    .custom-card {
+        display: 'flex';
+        flex-wrap: 'wrap'; 
+        justify-content: 'center';
+        width: 100%; /* 카드 너비를 100%로 설정하여 한 줄에 하나의 카드만 표시합니다. */
+        border:'none';
+        text-align: center;
+    }
+    .img-container{
+        display: flex;
+        flex-wrap: 'wrap'; 
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+    .responsive-img {
+        display: 'flex';
+        flex-wrap: 'wrap'; 
+        justify-content: 'center';
+        align-items: center;
+        width: 80%;
+        height: auto;
+        border-radius: 80px;
+        box-shadow: 4px 5px 8px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media (min-width: 768px) { /* 화면 너비가 768px 이상인 경우 */
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* 카드를 수평 중앙으로 정렬. */
+        border:'none';
+        text-align: center;
+    }
+    .custom-card {
+        width: calc(10%); /* 카드 너비 설정 및 간격 고려. */
+        margin: 30px; /* 카드 사이의 간격을 조절. */
+        border:'none';
+        text-align: center;
+    }
+    .img-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: 'wrap'; 
+        text-align: center;
+        align-items: center;
+    }
+    .responsive-img{
+        display: 'flex';
+        flex-wrap: 'wrap'; 
+        justify-content: 'center';
+        align-items: center;
+        width: 50%;
+        height: auto;
+        border-radius: 80px;
+        box-shadow: 4px 5px 8px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+.team {
+    text-align: center;
+}
