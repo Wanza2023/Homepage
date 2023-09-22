@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../styles/vision.css';
+import '../styles/Vision.css';
 
 function Vision() {
     const [isHover1, setIsHover1] = useState(false);
