@@ -1,8 +1,11 @@
-import { Section, SectionsContainer } from "react-fullpage";
-import Vision from "./Vision";
-import WhatWanza from "./WhatWanza";
-import Team from "./Team";
-import WanzaMember from "./WanzaMember";
+import { Header, Section, SectionsContainer } from "react-fullpage";
+import Vision from "./components/vision";
+import WhatWanza from "./components/WhatWanza";
+import Team from "./components/Team";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Project from "./components/Project";
+import WanzaMember from "./components/WanzaMember";
 
 export default function MainPage() {
     let options = {
@@ -12,13 +15,18 @@ export default function MainPage() {
     };
 
     return (
-        <SectionsContainer {...options}>
-            <Section>Home</Section>
-            <Section><WhatWanza /></Section>
-            <Section><Team/></Section>
-            <Section><Vision /></Section>
-            <Section><WanzaMember/></Section>
-            <Section></Section>
-        </SectionsContainer>
+        <div>
+            <Header>
+                <Navbar/>
+            </Header>
+            <SectionsContainer {...options}>
+                <Section><Home/></Section>
+                <Section><WhatWanza /></Section>
+                <Section><Team/></Section>
+                <Section><Vision /></Section>
+                <Section><WanzaMember/></Section>
+                <Section><Project/></Section>
+            </SectionsContainer>
+        </div>
     )
 }
