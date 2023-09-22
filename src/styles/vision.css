@@ -1,23 +1,44 @@
+.title {
+    font-family: "Inter-SemiBold";
+    font-size: 3.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
 .container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-content: space-around;
-    height: 500px;
+    height: 430px;
+    padding: 5px;
+}
+
+.contentTitle {
+    font-family: "Inter-SemiBold";
 }
 
 .box {
     width: 20vw;
     height: 40vh;
-    border: black solid 1px;
+    border-radius: 3rem;
+    box-shadow: 10px 10px 10px #DCDCDC;
+    margin: 30px;
     padding: 5px;
-    background: tomato;
-    color: white;
     transition: all 0.2s linear;
+    color: #000;
 }
 
 .grow {
     width: 30vw;
     height: 50vh;
     transition: all 0.2s linear;
+    border-radius: 70px;
+    box-shadow: 10px 10px 10px #DCDCDC;
+}
+
+.content {
+    font-family: "Inter-Regular";
+    margin-top: 50px;
+    font-size: 25px ;
 }

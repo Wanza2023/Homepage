@@ -1,5 +1,5 @@
-import "./styles/Team.css";
-import result from "./assets/images/result.png"
+import "../styles/Team.css";
+import result from "../assets/images/result.png"
 import { useState, useEffect, useRef } from "react";
 
 export default function Team(){
